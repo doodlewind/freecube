@@ -532,6 +532,19 @@ export const OLL = [
 
 // https://www.speedsolving.com/wiki/index.php/PLL
 export const PLL = [
+  /*
+  {
+    name: 'H-PLL',
+    match: { [N]: S, [S]: [N], [W]: E, [E]: W },
+    // moves: "L R U U L' R' F' B' U U F B"
+    moves: 'R R U U R U U R R U U R R U U R U U R R'
+  },
+  */
+  {
+    name: 'U-PLL a',
+    match: { [N]: W, [W]: [E], [E]: N },
+    moves: "R R U' R' U' R U R U R U' R"
+  },
   {
     name: 'A-PLL b',
     match: { [NE]: SW, [SW]: SE, [SE]: NE },

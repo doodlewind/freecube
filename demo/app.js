@@ -55,6 +55,15 @@ const rules = [
 rules.forEach(rule => {
   document.getElementById(rule.id).addEventListener('click', rule.ops)
 })
+document.getElementById('help').addEventListener('click', () => {
+  alert(`Shuffle: 随机打乱
+Cross: 还原底部十字
+F2L: 还原底部两层
+OLL: 还原顶面颜色
+PLL: 还原顶层顺序
+---------------
+Enjoy it`)
+})
 
 cube.rX = rX; cube.rY = rY; cube.render(rX, rY)
 window.cube = cube; window.solver = solver
