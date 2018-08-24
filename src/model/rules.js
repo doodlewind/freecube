@@ -335,14 +335,49 @@ export const OLL = [
     moves: "R' U U F R U R' U' F F U U F R"
   },
   {
-    id: 28,
-    match: { [E]: R, [S]: F },
-    moves: "F R U R' U' F F L' U' L U F"
-  },
-  {
     id: 20,
     match: { [N]: B, [E]: R, [S]: F, [W]: L },
     moves: "R B U B' R' F F B D' L' D B' F F"
+  },
+  {
+    id: 21,
+    match: { [NW]: L, [NE]: R, [SE]: R, [SW]: L },
+    moves: "R U R' U R U' R' U R U U R'"
+  },
+  {
+    id: 22,
+    match: { [NW]: L, [NE]: B, [SE]: F, [SW]: L },
+    moves: "R U U R' R' U' R R U' R' R' U U R"
+  },
+  {
+    id: 23,
+    match: { [NW]: B, [NE]: B },
+    moves: "R' U U R F U' R' U' R U F'"
+  },
+  {
+    id: 24,
+    match: { [NW]: B, [SW]: F },
+    moves: "L F R' F' L' F R F'"
+  },
+  {
+    id: 25,
+    match: { [NE]: B, [SW]: L },
+    moves: "R' F' L' F R F' L F"
+  },
+  {
+    id: 26,
+    match: { [NW]: L, [NE]: B, [SW]: F },
+    moves: "L' U' L U' L' U U L"
+  },
+  {
+    id: 27,
+    match: { [NW]: B, [NE]: R, [SE]: F },
+    moves: "R U R' U R U U R'"
+  },
+  {
+    id: 28,
+    match: { [E]: R, [S]: F },
+    moves: "F R U R' U' F F L' U' L U F"
   },
   {
     id: 29,
