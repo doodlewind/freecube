@@ -1,2 +1,2 @@
-# freecube
-⚛Crafted toolkits for Rubik's Cube
+# Freecube
+⚛Crafted toolkit for Rubik's Cube

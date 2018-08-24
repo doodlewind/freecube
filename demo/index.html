@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Freecube - 魔方复原模拟器</title>
+  </head>
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body { display: flex; flex-direction: column; align-items: center; }
+    .hud { display: flex; margin: auto; height: 30px; }
+  </style>
+  <body>
+    <div style="margin: 0 auto; width: 0; height: 0; overflow: hidden;">
+      <img id="share" width="480" height="320">
+    </div>
+    <canvas id="glcanvas" width="960" height="720" style="width: 100%; max-width: 960px;"></canvas>
+    <div class="hud">
+      <button id="btn-shuffle">Shuffle</button>
+      <button id="btn-cross">Cross</button>
+      <button id="btn-f2l">F2L</button>
+      <button id="btn-oll">OLL</button>
+      <button id="btn-pll">PLL</button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
