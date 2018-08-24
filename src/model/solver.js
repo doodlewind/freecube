@@ -217,6 +217,18 @@ const tryOrientationRules = (cube) => {
   return null // rule not found
 }
 
+// const gridName = i => ['S', 'E', 'N', 'W', 'SE', 'NE', 'NW', 'SW'][i]
+// const faceName = i => ['F', 'B', 'U', 'D', 'R', 'L'][i]
+// const colorName = c => ({
+//   [COLORS.WHITE]: 'white',
+//   [COLORS.GREEN]: 'green',
+//   [COLORS.RED]: 'red',
+//   [COLORS.BLUE]: 'blue',
+//   [COLORS.ORANGE]: 'orange',
+//   [COLORS.YELLOW]: 'yellow',
+//   [COLORS.EMPTY]: 'empty'
+// }[c])
+
 export const matchPermutationRule = (cube, { match }) => {
   const oldColors = getTopColors(cube); const newColors = getTopColors(cube)
   Object.keys(match).forEach(fromGrid => {
@@ -226,6 +238,21 @@ export const matchPermutationRule = (cube, { match }) => {
       oldColors[fromGrid][TOP_FACE_MAPPING[fromGrid][i]]
     }
   })
+
+  // newColors.forEach((grid, i) => {
+  //   grid.forEach((face, j) => {
+  //     if (face !== oldColors[i][j]) {
+  //       console.log(
+  //         'diff at',
+  //         `(grid ${gridName(i)}, face ${faceName(j)}),`,
+  //         'old color:',
+  //         colorName(oldColors[i][j]),
+  //         'new color:',
+  //         colorName(newColors[i][j])
+  //       )
+  //     }
+  //   })
+  // })
   return isPermutationSolved(newColors)
 }
 

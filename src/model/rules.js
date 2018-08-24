@@ -532,23 +532,110 @@ export const OLL = [
 
 // https://www.speedsolving.com/wiki/index.php/PLL
 export const PLL = [
-  /*
   {
-    name: 'H-PLL',
+    name: 'H',
     match: { [N]: S, [S]: [N], [W]: E, [E]: W },
-    // moves: "L R U U L' R' F' B' U U F B"
-    moves: 'R R U U R U U R R U U R R U U R U U R R'
+    moves: "L R U U L' R' F' B' U U F B"
   },
-  */
   {
-    name: 'U-PLL a',
+    name: 'U-a',
     match: { [N]: W, [W]: [E], [E]: N },
     moves: "R R U' R' U' R U R U R U' R"
   },
   {
-    name: 'A-PLL b',
+    name: 'U-b',
+    match: { [N]: E, [E]: W, [W]: N },
+    moves: "R' U R' U' R' U' R' U R U R R"
+  },
+  {
+    name: 'Z',
+    match: { [W]: N, [N]: W, [S]: E, [E]: S },
+    moves: "U R' U' R U' R U R U' R' U R U R R U' R' U"
+  },
+  {
+    name: 'A-a',
+    match: { [NW]: NE, [NE]: SE, [SE]: NW },
+    moves: "R' F R' B B R F' R' B B R R"
+  },
+  {
+    name: 'A-b',
     match: { [NE]: SW, [SW]: SE, [SE]: NE },
     moves: "R B' R F F R' B R F F R R"
+  },
+  {
+    name: 'E',
+    match: { [NW]: NE, [NE]: NW, [SW]: SE, [SE]: SW },
+    moves: "D R' D D F' D L D' F D D R D' F' L' F"
+  },
+  {
+    name: 'F',
+    match: { [NW]: NE, [NE]: NW, [W]: E, [E]: W },
+    moves: "(R' U R U') R R (F' U' F U) (R F R' F') R R U'"
+  },
+  {
+    name: 'G-a',
+    match: { [NW]: SE, [SE]: SW, [SW]: NW, [W]: S, [S]: N, [N]: W },
+    moves: "(R U R' U' R') U F (R U R U' R') F' U R' U U R"
+  },
+  {
+    name: 'G-b',
+    match: { [NW]: SW, [SW]: SE, [SE]: NW, [W]: N, [N]: S, [S]: W },
+    moves: "R' U' R B B D (L' U L U' L) D' B B"
+  },
+  {
+    name: 'G-c',
+    match: { [NE]: SW, [SW]: SE, [SE]: NE, [N]: E, [E]: S, [S]: N },
+    moves: "L' U' L U L U' F' L' U' L' U L F U' L U U L'"
+  },
+  {
+    name: 'G-d',
+    match: { [NE]: SE, [SE]: SW, [SW]: NE, [N]: S, [S]: E, [E]: N },
+    moves: "L U L' B B D' (R U' R' U R') D B B"
+  },
+  {
+    name: 'J-a',
+    match: { [NW]: SW, [SW]: NW, [W]: S, [S]: W },
+    moves: "(B' U F') U U (B U' B') U U (F B U')"
+  },
+  {
+    name: 'J-b',
+    match: { [NE]: SE, [SE]: NE, [E]: S, [S]: E },
+    moves: "(B U' F) U U (B' U B) U U (F' B' U)"
+  },
+  {
+    name: 'N-a',
+    match: { [W]: E, [E]: W, [SW]: NE, [NE]: SW },
+    moves: "(R U' L U U R' U L') (R U' L U U R' U L')"
+  },
+  {
+    name: 'N-b',
+    match: { [W]: E, [E]: W, [NW]: SE, [SE]: NW },
+    moves: "(L' U R' U' U' L U' R) (L' U R' U' U' L U' R)"
+  },
+  {
+    name: 'R-a',
+    match: { [N]: E, [E]: N, [SW]: SE, [SE]: SW },
+    moves: "R U U R' U U R B' R' U' R U R B R R"
+  },
+  {
+    name: 'R-b',
+    match: { [NW]: NE, [NE]: NW, [S]: E, [E]: S },
+    moves: "R' U U R U U R' F R U R' U' R' F' R R"
+  },
+  {
+    name: 'T',
+    match: { [W]: E, [E]: W, [NE]: SE, [SE]: NE },
+    moves: "R U R' U' R' F R R U' R' U' R U R' F'"
+  },
+  {
+    name: 'V',
+    match: { [NW]: SE, [SE]: NW, [N]: E, [E]: N },
+    moves: "R' U R' U' B' R' B B U' B' U B' R B R"
+  },
+  {
+    name: 'Y',
+    match: { [NW]: SE, [SE]: NW, [W]: N, [N]: W },
+    moves: "F R U' R' U' R U R' F' R U R' U' R' F R F'"
   }
 ].map(rule => ({
   name: rule.name,

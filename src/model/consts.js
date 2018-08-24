@@ -141,7 +141,7 @@ export const TOP_FACE_MAPPING = {
   [NE]: [B, R],
   [SE]: [R, F],
   [SW]: [F, L],
-  [N]: [R],
+  [N]: [B],
   [E]: [R],
   [S]: [F],
   [W]: [L]
