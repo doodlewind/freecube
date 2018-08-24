@@ -236,9 +236,213 @@ export const F2L = [
 // https://www.speedsolving.com/wiki/index.php/OLL
 export const OLL = [
   {
+    id: 1,
+    match: {
+      [NW]: L, [N]: B, [NE]: R, [E]: R, [SE]: R, [S]: F, [SW]: L, [W]: L
+    },
+    moves: "R U B' R B R R U' R' F R F'"
+  },
+  {
+    id: 2,
+    match: {
+      [NW]: L, [N]: B, [NE]: B, [E]: R, [SE]: F, [S]: F, [SW]: L, [W]: L
+    },
+    moves: "U U F R' F' R U R R B' R' B U' R'"
+  },
+  {
+    id: 3,
+    match: { [NW]: B, [N]: B, [E]: R, [SE]: F, [S]: F, [SW]: L, [W]: L },
+    moves: "L (U F U' F') L' U' R (B U B' U') R'"
+  },
+  {
+    id: 4,
+    match: { [NW]: L, [N]: B, [E]: R, [SE]: R, [S]: F, [SW]: F, [W]: L },
+    moves: "B (U L U' L') B' U F (R U R' U') F'"
+  },
+  {
+    id: 5,
+    match: { [NW]: B, [N]: B, [NE]: R, [SW]: L, [W]: L },
+    moves: "L' B B R B R' B L"
+  },
+  {
+    id: 6,
+    match: { [NW]: L, [N]: B, [NE]: B, [E]: R, [SE]: R },
+    moves: "R B B L' B' L B' R'"
+  },
+  {
+    id: 7,
+    match: { [NW]: B, [NE]: R, [E]: R, [SE]: F, [S]: F },
+    moves: "F R' F' R U U R U U R'"
+  },
+  {
+    id: 8,
+    match: { [NW]: L, [NE]: B, [S]: F, [SW]: F, [W]: L },
+    moves: "R U U R' U U R' F R F'"
+  },
+  {
+    id: 9,
+    match: { [NW]: L, [NE]: B, [SE]: R, [S]: F, [W]: L },
+    moves: "R' U' R U' R' U R' F R F' U R"
+  },
+  {
+    id: 10,
+    match: { [NW]: B, [NE]: R, [E]: R, [S]: F, [SW]: L },
+    moves: "(F U F' U) (F' L F L') F U U F'"
+  },
+  {
+    id: 11,
+    match: { [N]: B, [NE]: R, [E]: R, [SE]: F, [SW]: L },
+    moves: "R U' R' U' R U' R' U U F' U F U' R U R'"
+  },
+  {
+    id: 12,
+    match: { [NW]: L, [N]: B, [SE]: R, [SW]: F, [W]: L },
+    moves: "F (R U R' U') F' U F (R U R' U') F'"
+  },
+  {
+    id: 13,
+    match: { [NW]: B, [N]: B, [NE]: R, [SE]: F, [S]: F },
+    moves: "F U R U' R R F' R U R U' R'"
+  },
+  {
+    id: 14,
+    match: { [NW]: L, [N]: B, [NE]: B, [S]: F, [SW]: F },
+    moves: "F' U' L' U U L U L' U' L F"
+  },
+  {
+    id: 15,
+    match: { [NW]: B, [N]: B, [NE]: R, [S]: F, [SW]: L },
+    moves: "L' B' L R' U' R U L' B L"
+  },
+  {
+    id: 16,
+    match: { [NW]: L, [N]: B, [NE]: B, [SE]: R, [S]: F },
+    moves: "R B R' (L U L' U') R B' R'"
+  },
+  {
+    id: 17,
+    match: { [N]: B, [NE]: B, [E]: R, [S]: F, [SW]: L, [W]: L },
+    moves: "R U R' U (R' F R F') U U (R' F R F')"
+  },
+  {
+    id: 18,
+    match: { [NW]: L, [N]: B, [E]: R, [S]: F, [SW]: L, [W]: L },
+    moves: "(L' B L B') U U (L' B L B') (U B' U B)"
+  },
+  {
+    id: 19,
+    match: { [N]: B, [E]: R, [SE]: R, [S]: F, [SW]: L, [W]: L },
+    moves: "R' U U F R U R' U' F F U U F R"
+  },
+  {
+    id: 28,
+    match: { [E]: R, [S]: F },
+    moves: "F R U R' U' F F L' U' L U F"
+  },
+  {
+    id: 20,
+    match: { [N]: B, [E]: R, [S]: F, [W]: L },
+    moves: "R B U B' R' F F B D' L' D B' F F"
+  },
+  {
+    id: 29,
+    match: { [N]: B, [E]: R, [SE]: R, [SW]: L },
+    moves: "L' L' U' L B L' U L' L' U' L' B' L"
+  },
+  {
+    id: 30,
+    match: { [N]: B, [SE]: R, [SW]: L, [W]: L },
+    moves: "R' R' U R' B' R U' R' R' U R B R'"
+  },
+  {
+    id: 31,
+    match: { [N]: B, [NE]: B, [E]: R, [SE]: F },
+    moves: "L' U' B U L U' L' B' L"
+  },
+  {
+    id: 32,
+    match: { [NW]: B, [N]: B, [SW]: F, [W]: L },
+    moves: "R U B' U' R' U R B R'"
+  },
+  {
+    id: 33,
+    match: { [NW]: B, [N]: B, [S]: F, [SW]: F },
+    moves: "(R U R' U') (R' F R F')"
+  },
+  {
+    id: 34,
+    match: { [NW]: L, [N]: B, [NE]: R, [S]: F },
+    moves: "(R U R' U') B' (R' F R F') B"
+  },
+  {
+    id: 35,
+    match: { [N]: B, [NE]: R, [SW]: F, [W]: L },
+    moves: "R U U R' R' F R F' R U U R'"
+  },
+  {
+    id: 36,
+    match: { [N]: B, [NE]: R, [E]: R, [SW]: F },
+    moves: "R' U' R U' R' U R U R B' R' B"
+  },
+  {
+    id: 37,
+    match: { [NW]: B, [N]: B, [E]: R, [SE]: R },
+    moves: "R B' R' B U B U' B'"
+  },
+  {
+    id: 38,
+    match: { [NW]: L, [N]: B, [SE]: F, [W]: L },
+    moves: "L U L' U L U' L' U' L' B L B'"
+  },
+  {
+    id: 39,
+    match: { [NW]: B, [N]: B, [SE]: R, [S]: F },
+    moves: "L F' (L' U' L U) F U' L'"
+  },
+  {
+    id: 40,
+    match: { [N]: B, [NE]: B, [S]: F, [SW]: L },
+    moves: "R' F (R U R' U') F' U R"
+  },
+  {
+    id: 41,
+    match: { [N]: B, [SE]: F, [SW]: F, [W]: L },
+    moves: "B U L U' L' B' L' U U L U L' U L"
+  },
+  {
+    id: 42,
+    match: { [N]: B, [E]: R, [SE]: F, [SW]: F },
+    moves: "R' U' R U F R U R' U' R' U R U' F'"
+  },
+  {
+    id: 43,
+    match: { [N]: B, [NE]: R, [E]: R, [SE]: R },
+    moves: "B' U' R' U R B"
+  },
+  {
+    id: 44,
+    match: { [NW]: L, [N]: B, [SW]: L, [W]: L },
+    moves: "B U L U' L' B'"
+  },
+  {
+    id: 45,
+    match: { [NW]: L, [N]: B, [S]: F, [SW]: L },
+    moves: "F (R U R' U') F'"
+  },
+  {
+    id: 46,
+    match: { [NE]: R, [E]: R, [SE]: R, [W]: L },
+    moves: "R' U' R' F R F' U R"
+  },
+  {
     id: 47,
     match: { [NW]: B, [NE]: R, [W]: L, [SW]: F, [S]: F, [SE]: R },
     moves: "F' (L' U' L U) (L' U' L U) F"
+  },
+  {
+    id: 48,
+    match: { [NW]: L, [NE]: B, [E]: R, [SE]: F, [S]: F, [SW]: L },
+    moves: "F (R U R' U') (R U R' U') F'"
   },
   {
     id: 49,
@@ -248,7 +452,17 @@ export const OLL = [
   {
     id: 50,
     match: { [NW]: L, [N]: B, [NE]: B, [SE]: F, [SW]: L, [W]: L },
-    moves: "R B' R B R2' U2 F R' F' R"
+    moves: "R B' R B R R U U F R' F' R"
+  },
+  {
+    id: 51,
+    match: { [NW]: B, [N]: B, [NE]: R, [SE]: R, [S]: F, [SW]: F },
+    moves: "F U R U' R' U R U' R' F'"
+  },
+  {
+    id: 52,
+    match: { [NW]: B, [NE]: R, [E]: R, [SE]: R, [SW]: F, [W]: L },
+    moves: "R' U' R U' R' U F' U F R"
   },
   {
     id: 53,
@@ -258,7 +472,22 @@ export const OLL = [
   {
     id: 54,
     match: { [NW]: L, [NE]: R, [SE]: R, [S]: F, [SW]: L, [W]: L },
-    moves: "U U F R' F' R U2 F2 L F L' F"
+    moves: "U U F R' F' R U U F F L F L' F"
+  },
+  {
+    id: 55,
+    match: { [NW]: L, [NE]: R, [E]: R, [SE]: R, [SW]: L, [W]: L },
+    moves: "R U U R R U' R U' R' U U F R F'"
+  },
+  {
+    id: 56,
+    match: { [NW]: L, [N]: B, [NE]: R, [SE]: R, [S]: F, [SW]: L },
+    moves: "L F L' U R U' R' U R U' R' L F' L'"
+  },
+  {
+    id: 57,
+    match: { [N]: B, [S]: F },
+    moves: "R U R' U' L R' F R F' L'"
   }
 ].map(rule => ({
   id: rule.id,

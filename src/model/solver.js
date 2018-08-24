@@ -25,11 +25,11 @@ const isPairSolved = (cube, pair) => {
   )
 }
 
-const isOrientationSolved = (cube) => {
+export const isOrientationSolved = (cube) => {
   return TOP_BLOCKS.every(coord => cube.getBlock(coord).colors[U] === COLOR_U)
 }
 
-const isPermutationSolved = (colors) => (
+export const isPermutationSolved = (colors) => (
   colors[NW][B] === colors[N][B] && colors[N][B] === colors[NE][B] &&
   colors[NE][R] === colors[E][R] & colors[E][R] === colors[SE][R] &&
   colors[SE][F] === colors[S][F] && colors[S][F] === colors[SW][F] &&
@@ -191,7 +191,7 @@ const tryPairRules = (cube, pair) => {
   return null // rule not found
 }
 
-const matchOrientationRule = (cube, { match }) => {
+export const matchOrientationRule = (cube, { match }) => {
   return [S, E, N, W, SE, NE, NW, SW].every(dir => {
     const faceIndex = Number.isInteger(match[dir]) ? match[dir] : U
     return cube.getBlock(GRID_MAPPING[dir]).colors[faceIndex] === COLOR_U
@@ -217,7 +217,7 @@ const tryOrientationRules = (cube) => {
   return null // rule not found
 }
 
-const matchPermutationRule = (cube, { match }) => {
+export const matchPermutationRule = (cube, { match }) => {
   const oldColors = getTopColors(cube); const newColors = getTopColors(cube)
   Object.keys(match).forEach(fromGrid => {
     const toGrid = match[fromGrid]
