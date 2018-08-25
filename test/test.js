@@ -20,7 +20,6 @@ const getTopColors = (cube) => {
 }
 const flip = moves => moves.map(x => x.length > 1 ? x[0] : x + "'").reverse()
 
-/*
 OLL.forEach(rule => {
   const rMoves = flip(rule.moves)
   const cube = new Cube(null, rMoves)
@@ -31,7 +30,6 @@ OLL.forEach(rule => {
     console.log('OLL test pass', rule.id)
   } else console.error('Error OLL rule match', rule.id)
 })
-*/
 
 PLL.forEach(rule => {
   const rMoves = flip(rule.moves)
