@@ -3,6 +3,8 @@
 /* eslint-env browser */
 import { Cube } from '../src/model/cube'
 import { Solver } from '../src/model/solver'
+import * as consts from '../src/model/consts'
+import * as helpers from '../src/model/helpers'
 
 const $canvas = document.querySelector('#glcanvas')
 const cube = new Cube($canvas, JSON.parse(localStorage.moves || '[]'))
@@ -67,4 +69,5 @@ Enjoy it`)
 
 cube.rX = rX; cube.rY = rY; cube.render(rX, rY)
 window.cube = cube; window.solver = solver
+window.helpers = helpers; window.consts = consts
 document.getElementById('share').src = $canvas.toDataURL()
