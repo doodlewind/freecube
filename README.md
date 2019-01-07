@@ -1,5 +1,5 @@
 # Freecube
-⚛Crafted toolkit for Rubik's Cube
+⚛ Solve Rubik's Cube with WebGL in 10KB.
 
 ![banner](./resources/banner.png)
 
