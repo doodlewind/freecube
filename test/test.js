@@ -1,12 +1,12 @@
 
-import { Cube } from '../src/model/cube'
+import { Cube } from '../src/model/cube.js'
 import {
   matchOrientationRule,
   matchPermutationRule,
   isOrientationSolved,
   isPermutationSolved
-} from '../src/model/solver'
-import { OLL, PLL } from '../src/model/rules'
+} from '../src/model/solver/js'
+import { OLL, PLL } from '../src/model/rules.js'
 
 console.clear()
 

@@ -1,4 +1,4 @@
-import { rotateX, rotateY, rotateZ } from './math'
+import { rotateX, rotateY, rotateZ } from './math.js'
 
 const coordInFace = (coord, face) => {
   return {

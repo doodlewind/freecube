@@ -1,4 +1,4 @@
-import { create, perspective, translate, rotate } from './math'
+import { create, perspective, translate, rotate } from './math.js'
 
 export const getMats = (w, h, rX, rY) => {
   const fov = 30 * Math.PI / 180

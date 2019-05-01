@@ -1,8 +1,8 @@
 // Use `parcel index.html` for running this demo.
 
 /* eslint-env browser */
-import { Cube } from '../src/model/cube'
-import { Solver } from '../src/model/solver'
+import { Cube } from '../src/model/cube.js'
+import { Solver } from '../src/model/solver.js'
 
 const $canvas = document.querySelector('#glcanvas')
 const cube = new Cube($canvas, JSON.parse(localStorage.moves || '[]'))

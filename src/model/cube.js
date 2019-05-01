@@ -1,7 +1,7 @@
-import { initProgram } from '../renderer/shaders'
-import { getBuffer } from '../renderer/buffer'
-import { renderFrame } from '../renderer/render'
-import { F, B, U, D, R, L, INIT_BLOCKS } from './consts'
+import { initProgram } from '../renderer/shaders.js'
+import { getBuffer } from '../renderer/buffer.js'
+import { renderFrame } from '../renderer/render.js'
+import { F, B, U, D, R, L, INIT_BLOCKS } from './consts.js'
 
 export class Cube {
   constructor (canvas, moves = []) {

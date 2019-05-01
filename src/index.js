@@ -4,5 +4,5 @@
  * Released under the MIT License.
  */
 
-export { Cube } from './model/cube'
-export { Solver } from './model/solver'
+export { Cube } from './model/cube.js'
+export { Solver } from './model/solver.js'

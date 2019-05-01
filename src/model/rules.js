@@ -2,7 +2,7 @@ import {
   F, B, U, D, R, L,
   N, W, S, E, NW, NE, SW, SE, SLOT_M, SLOT_D,
   COLOR_D as CD, COLOR_F as CF, COLOR_R as CR
-} from './consts'
+} from './consts.js'
 
 const SE_D_AS_F = { [F]: CD, [U]: CF, [R]: CR }
 const SE_D_AS_R = { [F]: CF, [U]: CR, [R]: CD }

@@ -1,12 +1,12 @@
-import { Cube } from './cube'
+import { Cube } from './cube.js'
 import {
   F, B, U, D, R, L, SLOT_M, SLOT_D,
   S, E, N, W, SE, NE, NW, SW,
   COLORS, COLOR_D, COLOR_U, PAIRS, EDGE_COORDS, BLOCK_COORDS, TOP_BLOCKS,
   Y_ROTATE_MAPPING, SLOT_COORDS_MAPPING, EDGE_GRID_MAPPING, CORNER_GRID_MAPPING,
   GRID_MAPPING, TOP_FACE_MAPPING, EDGE_GRIDS, INIT_BLOCKS
-} from './consts'
-import * as RULES from './rules'
+} from './consts.js'
+import * as RULES from './rules.js'
 
 const base = INIT_BLOCKS() // base cube blocks
 const baseBlockAt = ([x, y, z]) => base[(x + 1) * 9 + (y + 1) * 3 + z + 1]
