@@ -101,7 +101,7 @@ export class Cube {
     const colorsAt = coord => this.getBlock(coord).colors
     rotateBlocks(cs.map(colorsAt)); rotateBlocks(es.map(colorsAt))
 
-    // Roatate all block faces with same rotation.
+    // Rotate all block faces with same rotation.
     const swap = [
       [[F, U, B, D], [L, F, R, B], [L, U, R, D]],
       [[F, D, B, U], [F, L, B, R], [D, R, U, L]]
